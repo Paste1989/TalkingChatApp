@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CB7FB216F8604009A759A /* SWRevealViewController.m */; };
 		276840A2216F781C0052B2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840A1216F781C0052B2C4 /* AppDelegate.swift */; };
 		276840A4216F781C0052B2C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840A3216F781C0052B2C4 /* ViewController.swift */; };
 		276840A7216F781C0052B2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276840A5216F781C0052B2C4 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		276840AF216F781D0052B2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276840AD216F781D0052B2C4 /* LaunchScreen.storyboard */; };
 		276840BA216F781D0052B2C4 /* TalkingChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840B9216F781D0052B2C4 /* TalkingChatAppTests.swift */; };
 		276840C5216F781D0052B2C4 /* TalkingChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */; };
+		6C0F1612233A6F108ECEECEC /* Pods_TalkingChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */; };
+		7AE24BAB17E83504A07ED264 /* Pods_TalkingChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1FBECF522C79F7ED92F0F /* Pods_TalkingChatAppUITests.framework */; };
+		8D9BD385BCDC9095469C4A9E /* Pods_TalkingChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272CB7FA216F8603009A759A /* TalkingChatApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkingChatApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		272CB7FB216F8604009A759A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		272CB7FC216F8604009A759A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		2768409E216F781C0052B2C4 /* TalkingChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276840A1216F781C0052B2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276840A3216F781C0052B2C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		276840C0216F781D0052B2C4 /* TalkingChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingChatAppUITests.swift; sourceTree = "<group>"; };
 		276840C6216F781D0052B2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4723604722989AC26F449736 /* Pods-TalkingChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppUITests/Pods-TalkingChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ECE8798CD23A7D2CD546021 /* Pods-TalkingChatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppTests/Pods-TalkingChatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96200F31F253CDC3AE221E1E /* Pods-TalkingChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppTests/Pods-TalkingChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5C39A0A4415ADA78B5D9C64 /* Pods-TalkingChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatApp/Pods-TalkingChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C9BA1BDC47B3DD2115139D6A /* Pods-TalkingChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatApp/Pods-TalkingChatApp.release.xcconfig"; sourceTree = "<group>"; };
+		DCE1FBECF522C79F7ED92F0F /* Pods_TalkingChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8D1ABFC8FE062F0DFC2371 /* Pods-TalkingChatAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppUITests/Pods-TalkingChatAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0F1612233A6F108ECEECEC /* Pods_TalkingChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9BD385BCDC9095469C4A9E /* Pods_TalkingChatAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +88,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE24BAB17E83504A07ED264 /* Pods_TalkingChatAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272CB7F9216F85DB009A759A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				272CB7FC216F8604009A759A /* SWRevealViewController.h */,
+				272CB7FB216F8604009A759A /* SWRevealViewController.m */,
+				272CB7FA216F8603009A759A /* TalkingChatApp-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		27684095216F781B0052B2C4 = {
 			isa = PBXGroup;
 			children = (
+				272CB7F9216F85DB009A759A /* SupportingFiles */,
 				276840A0216F781C0052B2C4 /* TalkingChatApp */,
 				276840B8216F781D0052B2C4 /* TalkingChatAppTests */,
 				276840C3216F781D0052B2C4 /* TalkingChatAppUITests */,
 				2768409F216F781C0052B2C4 /* Products */,
+				51F3411B20C783AD57348CB7 /* Pods */,
+				2AC17A7CB72814BE7810CEF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +160,29 @@
 			path = TalkingChatAppUITests;
 			sourceTree = "<group>";
 		};
+		2AC17A7CB72814BE7810CEF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */,
+				41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */,
+				DCE1FBECF522C79F7ED92F0F /* Pods_TalkingChatAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F3411B20C783AD57348CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5C39A0A4415ADA78B5D9C64 /* Pods-TalkingChatApp.debug.xcconfig */,
+				C9BA1BDC47B3DD2115139D6A /* Pods-TalkingChatApp.release.xcconfig */,
+				5ECE8798CD23A7D2CD546021 /* Pods-TalkingChatAppTests.debug.xcconfig */,
+				96200F31F253CDC3AE221E1E /* Pods-TalkingChatAppTests.release.xcconfig */,
+				4723604722989AC26F449736 /* Pods-TalkingChatAppUITests.debug.xcconfig */,
+				EE8D1ABFC8FE062F0DFC2371 /* Pods-TalkingChatAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 276840C9216F781D0052B2C4 /* Build configuration list for PBXNativeTarget "TalkingChatApp" */;
 			buildPhases = (
+				D1B66367638704594DCB83D6 /* [CP] Check Pods Manifest.lock */,
 				2768409A216F781C0052B2C4 /* Sources */,
 				2768409B216F781C0052B2C4 /* Frameworks */,
 				2768409C216F781C0052B2C4 /* Resources */,
+				CC044444F09D61C0259AD8FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 276840CC216F781D0052B2C4 /* Build configuration list for PBXNativeTarget "TalkingChatAppTests" */;
 			buildPhases = (
+				86ED00A8180A9F05653A4215 /* [CP] Check Pods Manifest.lock */,
 				276840B1216F781D0052B2C4 /* Sources */,
 				276840B2216F781D0052B2C4 /* Frameworks */,
 				276840B3216F781D0052B2C4 /* Resources */,
@@ -170,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 276840CF216F781D0052B2C4 /* Build configuration list for PBXNativeTarget "TalkingChatAppUITests" */;
 			buildPhases = (
+				A0121920B2622800E64A9FEB /* [CP] Check Pods Manifest.lock */,
 				276840BC216F781D0052B2C4 /* Sources */,
 				276840BD216F781D0052B2C4 /* Frameworks */,
 				276840BE216F781D0052B2C4 /* Resources */,
@@ -196,6 +255,7 @@
 				TargetAttributes = {
 					2768409D216F781C0052B2C4 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					276840B4216F781D0052B2C4 = {
 						CreatedOnToolsVersion = 9.4;
@@ -254,6 +314,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86ED00A8180A9F05653A4215 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingChatAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0121920B2622800E64A9FEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingChatAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC044444F09D61C0259AD8FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TalkingChatApp/Pods-TalkingChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkingChatApp/Pods-TalkingChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B66367638704594DCB83D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkingChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2768409A216F781C0052B2C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +403,7 @@
 				276840A4216F781C0052B2C4 /* ViewController.swift in Sources */,
 				276840A2216F781C0052B2C4 /* AppDelegate.swift in Sources */,
 				276840AA216F781C0052B2C4 /* TalkingChatApp.xcdatamodeld in Sources */,
+				272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +574,10 @@
 		};
 		276840CA216F781D0052B2C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C39A0A4415ADA78B5D9C64 /* Pods-TalkingChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DDS45FZX3;
 				INFOPLIST_FILE = TalkingChatApp/Info.plist;
@@ -443,6 +587,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.TalkingChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/TalkingChatApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +596,10 @@
 		};
 		276840CB216F781D0052B2C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BA1BDC47B3DD2115139D6A /* Pods-TalkingChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4DDS45FZX3;
 				INFOPLIST_FILE = TalkingChatApp/Info.plist;
@@ -461,6 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = copyPaste89.TalkingChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SupportingFiles/TalkingChatApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +617,7 @@
 		};
 		276840CD216F781D0052B2C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECE8798CD23A7D2CD546021 /* Pods-TalkingChatAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +639,7 @@
 		};
 		276840CE216F781D0052B2C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96200F31F253CDC3AE221E1E /* Pods-TalkingChatAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +661,7 @@
 		};
 		276840D0216F781D0052B2C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4723604722989AC26F449736 /* Pods-TalkingChatAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +682,7 @@
 		};
 		276840D1216F781D0052B2C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8D1ABFC8FE062F0DFC2371 /* Pods-TalkingChatAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

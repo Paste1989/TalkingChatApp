@@ -2,7 +2,7 @@
 //  TalkingChatAppTests.swift
 //  TalkingChatAppTests
 //
-//  Created by Brezonje on 11.10.2018..
+//  Created by Saša Brezovac on 11.10.2018..
 //  Copyright © 2018. CopyPaste89. All rights reserved.
 //
 
