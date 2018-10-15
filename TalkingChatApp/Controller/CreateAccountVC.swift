@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  CreateAccountVC.swift
 //  TalkingChatApp
 //
 //  Created by Saša Brezovac on 15.10.2018..
@@ -8,16 +8,17 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
-
+class CreateAccountVC: UIViewController {
+    
     //MARK: - Outlets
     
     
     
-    //MARK: LifeCycle
+    //MAK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,15 +26,10 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     //MARK: - Actions
     @IBAction func closeBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: UNWIND, sender: nil)
     }
-    
-    @IBAction func createAccountButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: CREATE_AN_ACCOUNT, sender: nil)
-    }
-    
     
 }
