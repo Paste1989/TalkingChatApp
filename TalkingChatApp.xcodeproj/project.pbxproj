@@ -17,6 +17,8 @@
 		276840AF216F781D0052B2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276840AD216F781D0052B2C4 /* LaunchScreen.storyboard */; };
 		276840BA216F781D0052B2C4 /* TalkingChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840B9216F781D0052B2C4 /* TalkingChatAppTests.swift */; };
 		276840C5216F781D0052B2C4 /* TalkingChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */; };
+		278FAC3B2174BD4A003E2C66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3A2174BD4A003E2C66 /* Constants.swift */; };
+		278FAC3D2174C589003E2C66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3C2174C589003E2C66 /* LoginVC.swift */; };
 		279262742170DABF0090019E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279262732170DABF0090019E /* GradientView.swift */; };
 		6C0F1612233A6F108ECEECEC /* Pods_TalkingChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */; };
 		7AE24BAB17E83504A07ED264 /* Pods_TalkingChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1FBECF522C79F7ED92F0F /* Pods_TalkingChatAppUITests.framework */; };
@@ -63,6 +65,8 @@
 		276840C0216F781D0052B2C4 /* TalkingChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingChatAppUITests.swift; sourceTree = "<group>"; };
 		276840C6216F781D0052B2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278FAC3A2174BD4A003E2C66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		278FAC3C2174C589003E2C66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		279262732170DABF0090019E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4723604722989AC26F449736 /* Pods-TalkingChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppUITests/Pods-TalkingChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				272CB805216F8AF4009A759A /* ChatVC.swift */,
 				272CB807216F8B18009A759A /* ChannelVC.swift */,
+				278FAC3C2174C589003E2C66 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 		276840A0216F781C0052B2C4 /* TalkingChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				278FAC392174BD2B003E2C66 /* Utiliiities */,
 				272CB804216F8A99009A759A /* Model */,
 				272CB803216F8A91009A759A /* View */,
 				272CB802216F8A8A009A759A /* Controller */,
@@ -202,6 +208,14 @@
 				276840C6216F781D0052B2C4 /* Info.plist */,
 			);
 			path = TalkingChatAppUITests;
+			sourceTree = "<group>";
+		};
+		278FAC392174BD2B003E2C66 /* Utiliiities */ = {
+			isa = PBXGroup;
+			children = (
+				278FAC3A2174BD4A003E2C66 /* Constants.swift */,
+			);
+			path = Utiliiities;
 			sourceTree = "<group>";
 		};
 		2AC17A7CB72814BE7810CEF9 /* Frameworks */ = {
@@ -446,7 +460,9 @@
 			files = (
 				272CB806216F8AF4009A759A /* ChatVC.swift in Sources */,
 				276840A2216F781C0052B2C4 /* AppDelegate.swift in Sources */,
+				278FAC3D2174C589003E2C66 /* LoginVC.swift in Sources */,
 				279262742170DABF0090019E /* GradientView.swift in Sources */,
+				278FAC3B2174BD4A003E2C66 /* Constants.swift in Sources */,
 				276840AA216F781C0052B2C4 /* TalkingChatApp.xcdatamodeld in Sources */,
 				272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */,
 				272CB808216F8B18009A759A /* ChannelVC.swift in Sources */,

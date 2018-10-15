@@ -1,25 +1,23 @@
 //
-//  ChannelVC.swift
+//  LoginVC.swift
 //  TalkingChatApp
 //
-//  Created by Saša Brezovac on 11.10.2018..
+//  Created by Saša Brezovac on 15.10.2018..
 //  Copyright © 2018. CopyPaste89. All rights reserved.
 //
 
 import UIKit
 
-class ChannelVC: UIViewController {
+class LoginVC: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet weak var loginBtn: UIButton!
     
     
     
-    //MARK: - LifeCycle
+    //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       self.revealViewController().rearViewRevealWidth =  self.view.frame.size.width - 60
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,10 +25,10 @@ class ChannelVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     //MARK: - Actions
-    @IBAction func loginBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN , sender: nil)
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 }
