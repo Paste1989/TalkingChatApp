@@ -21,6 +21,7 @@
 		278FAC3D2174C589003E2C66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3C2174C589003E2C66 /* LoginVC.swift */; };
 		278FAC3F2174C9FD003E2C66 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */; };
 		279262742170DABF0090019E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279262732170DABF0090019E /* GradientView.swift */; };
+		27EEF41A2176336100984428 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EEF4192176336100984428 /* AuthService.swift */; };
 		6C0F1612233A6F108ECEECEC /* Pods_TalkingChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */; };
 		7AE24BAB17E83504A07ED264 /* Pods_TalkingChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE1FBECF522C79F7ED92F0F /* Pods_TalkingChatAppUITests.framework */; };
 		8D9BD385BCDC9095469C4A9E /* Pods_TalkingChatAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */; };
@@ -70,6 +71,7 @@
 		278FAC3C2174C589003E2C66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		279262732170DABF0090019E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		27EEF4192176336100984428 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		41D84A7C0509268DE633C567 /* Pods_TalkingChatAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4723604722989AC26F449736 /* Pods-TalkingChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppUITests/Pods-TalkingChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5ECE8798CD23A7D2CD546021 /* Pods-TalkingChatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkingChatAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkingChatAppTests/Pods-TalkingChatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		276840A0216F781C0052B2C4 /* TalkingChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				27EEF4182176333C00984428 /* Services */,
 				278FAC392174BD2B003E2C66 /* Utiliiities */,
 				272CB804216F8A99009A759A /* Model */,
 				272CB803216F8A91009A759A /* View */,
@@ -219,6 +222,14 @@
 				278FAC3A2174BD4A003E2C66 /* Constants.swift */,
 			);
 			path = Utiliiities;
+			sourceTree = "<group>";
+		};
+		27EEF4182176333C00984428 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27EEF4192176336100984428 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		2AC17A7CB72814BE7810CEF9 /* Frameworks */ = {
@@ -468,6 +479,7 @@
 				278FAC3B2174BD4A003E2C66 /* Constants.swift in Sources */,
 				278FAC3F2174C9FD003E2C66 /* CreateAccountVC.swift in Sources */,
 				276840AA216F781C0052B2C4 /* TalkingChatApp.xcdatamodeld in Sources */,
+				27EEF41A2176336100984428 /* AuthService.swift in Sources */,
 				272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */,
 				272CB808216F8B18009A759A /* ChannelVC.swift in Sources */,
 			);
