@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		270738A621767D3A00C89DED /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270738A521767D3A00C89DED /* RoundedButton.swift */; };
 		271333C421774CB5004E71D8 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333C321774CB5004E71D8 /* UserDataService.swift */; };
+		271333C62177718A004E71D8 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333C52177718A004E71D8 /* AvatarPickerVC.swift */; };
+		271333C921777421004E71D8 /* avatarPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333C821777421004E71D8 /* avatarPickerCollectionViewCell.swift */; };
 		272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CB7FB216F8604009A759A /* SWRevealViewController.m */; };
 		272CB806216F8AF4009A759A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CB805216F8AF4009A759A /* ChatVC.swift */; };
 		272CB808216F8B18009A759A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CB807216F8B18009A759A /* ChannelVC.swift */; };
@@ -50,6 +52,8 @@
 		06B2120685CE38E39DF60659 /* Pods_TalkingChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkingChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270738A521767D3A00C89DED /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		271333C321774CB5004E71D8 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		271333C52177718A004E71D8 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		271333C821777421004E71D8 /* avatarPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarPickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		272CB7FA216F8603009A759A /* TalkingChatApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkingChatApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		272CB7FB216F8604009A759A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		272CB7FC216F8604009A759A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -114,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271333C7217773EC004E71D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				271333C821777421004E71D8 /* avatarPickerCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		272CB7F9216F85DB009A759A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 				272CB807216F8B18009A759A /* ChannelVC.swift */,
 				278FAC3C2174C589003E2C66 /* LoginVC.swift */,
 				278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */,
+				271333C52177718A004E71D8 /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				27EEF4182176333C00984428 /* Services */,
+				271333C7217773EC004E71D8 /* Cells */,
 				278FAC392174BD2B003E2C66 /* Utiliiities */,
 				272CB804216F8A99009A759A /* Model */,
 				272CB803216F8A91009A759A /* View */,
@@ -487,9 +501,11 @@
 				271333C421774CB5004E71D8 /* UserDataService.swift in Sources */,
 				270738A621767D3A00C89DED /* RoundedButton.swift in Sources */,
 				276840AA216F781C0052B2C4 /* TalkingChatApp.xcdatamodeld in Sources */,
+				271333C921777421004E71D8 /* avatarPickerCollectionViewCell.swift in Sources */,
 				27EEF41A2176336100984428 /* AuthService.swift in Sources */,
 				272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */,
 				272CB808216F8B18009A759A /* ChannelVC.swift in Sources */,
+				271333C62177718A004E71D8 /* AvatarPickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
