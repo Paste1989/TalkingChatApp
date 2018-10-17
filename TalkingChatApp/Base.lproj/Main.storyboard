@@ -503,7 +503,7 @@
                         <outlet property="emailTextField" destination="hK3-9j-A9a" id="Gao-kY-u3N"/>
                         <outlet property="passwordTextField" destination="s6X-pJ-knc" id="7XC-4b-JUH"/>
                         <outlet property="userImage" destination="aSV-y6-fEx" id="xJc-qk-tyV"/>
-                        <outlet property="userNameTextField" destination="bAK-rV-WyO" id="c6Q-bf-SEh"/>
+                        <outlet property="userNameTextField" destination="xiJ-0i-R4u" id="7Pu-2J-pU0"/>
                         <segue destination="p1b-Ol-aNl" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="gcb-92-Asc"/>
                     </connections>
                 </viewController>

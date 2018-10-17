@@ -11,11 +11,15 @@ import UIKit
 class CreateAccountVC: UIViewController {
     
     //MARK: - Outlets
-    @IBOutlet weak var userNameTextField: UIStackView!
+
+    @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userImage: UIImageView!
     
+    
+    var avatarName = "profIcon"
+    var avatarColor = "0.5, 0.5, 0.5, 1"
     
     
     //MAK: - LifeCycle
@@ -34,8 +38,8 @@ class CreateAccountVC: UIViewController {
     //MARK: - Actions
     @IBAction func createAccountBtnPressed(_ sender: Any) {
         
+        guard let name = userNameTextField.text , userNameTextField.text != nil else {return}
         guard let email = emailTextField.text , emailTextField.text != nil else {return}
-        
         guard let pass = passwordTextField.text , passwordTextField.text != nil else {return}
         
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
@@ -45,8 +49,18 @@ class CreateAccountVC: UIViewController {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     
                     if success {
-                        print("USER IS LOGGED IN!" ,
-                              AuthService.instance.authToken)
+                        print("USER IS LOGGED IN!")
+                        
+                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
+                            
+                            if success {
+                                print("USER CREATED!",
+                                      "avatarName: \(UserDataService.instance.avatarName)",
+                                    "avatarColor: \(UserDataService.instance.avatarColor)")
+                                
+                                self.performSegue(withIdentifier: UNWIND, sender: nil)
+                            }
+                        })
                     }
                 })
             }
