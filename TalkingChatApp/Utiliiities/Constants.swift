@@ -18,20 +18,28 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
 
-//Segues
+// Colors
+let myPurple: UIColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 0.5)
+
+
+// Notification Constansts
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("NotifUserDataChanged")
+
+
+// Segues
 let TO_LOGIN = "toLogin"
 let CREATE_AN_ACCOUNT = "create_an_account"
 let UNWIND = "unwindToChannel"
 let TO_AVATAR_PICKER = "toAvatarPicker"
 
 
-//UserDefaults
+// User Defaults
 let TOKEN_KEY = "token"
 let IS_LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
 
-//Headers
+// Headers
 let HEADER = ["Content-Type":"application/json; charset=utf-8"]
 
 
