@@ -22,6 +22,8 @@
 		276840AF216F781D0052B2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276840AD216F781D0052B2C4 /* LaunchScreen.storyboard */; };
 		276840BA216F781D0052B2C4 /* TalkingChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840B9216F781D0052B2C4 /* TalkingChatAppTests.swift */; };
 		276840C5216F781D0052B2C4 /* TalkingChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */; };
+		277ED9542178AF6100FC9A6B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277ED9522178AF6100FC9A6B /* ProfileVC.swift */; };
+		277ED9552178AF6100FC9A6B /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277ED9532178AF6100FC9A6B /* ProfileVC.xib */; };
 		278FAC3B2174BD4A003E2C66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3A2174BD4A003E2C66 /* Constants.swift */; };
 		278FAC3D2174C589003E2C66 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3C2174C589003E2C66 /* LoginVC.swift */; };
 		278FAC3F2174C9FD003E2C66 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */; };
@@ -77,6 +79,8 @@
 		276840C0216F781D0052B2C4 /* TalkingChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalkingChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276840C4216F781D0052B2C4 /* TalkingChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkingChatAppUITests.swift; sourceTree = "<group>"; };
 		276840C6216F781D0052B2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277ED9522178AF6100FC9A6B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		277ED9532178AF6100FC9A6B /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		278FAC3A2174BD4A003E2C66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		278FAC3C2174C589003E2C66 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				278FAC3C2174C589003E2C66 /* LoginVC.swift */,
 				278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */,
 				271333C52177718A004E71D8 /* AvatarPickerVC.swift */,
+				277ED9522178AF6100FC9A6B /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 		276840A0216F781C0052B2C4 /* TalkingChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				277ED9562178AF6800FC9A6B /* XIBs */,
 				27EEF4182176333C00984428 /* Services */,
 				271333C7217773EC004E71D8 /* Cells */,
 				278FAC392174BD2B003E2C66 /* Utiliiities */,
@@ -236,6 +242,14 @@
 				276840C6216F781D0052B2C4 /* Info.plist */,
 			);
 			path = TalkingChatAppUITests;
+			sourceTree = "<group>";
+		};
+		277ED9562178AF6800FC9A6B /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				277ED9532178AF6100FC9A6B /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		278FAC392174BD2B003E2C66 /* Utiliiities */ = {
@@ -387,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277ED9552178AF6100FC9A6B /* ProfileVC.xib in Resources */,
 				276840AF216F781D0052B2C4 /* LaunchScreen.storyboard in Resources */,
 				276840AC216F781D0052B2C4 /* Assets.xcassets in Resources */,
 				276840A7216F781C0052B2C4 /* Main.storyboard in Resources */,
@@ -499,6 +514,7 @@
 				276840A2216F781C0052B2C4 /* AppDelegate.swift in Sources */,
 				278FAC3D2174C589003E2C66 /* LoginVC.swift in Sources */,
 				279262742170DABF0090019E /* GradientView.swift in Sources */,
+				277ED9542178AF6100FC9A6B /* ProfileVC.swift in Sources */,
 				278FAC3B2174BD4A003E2C66 /* Constants.swift in Sources */,
 				278FAC3F2174C9FD003E2C66 /* CreateAccountVC.swift in Sources */,
 				271333C421774CB5004E71D8 /* UserDataService.swift in Sources */,
