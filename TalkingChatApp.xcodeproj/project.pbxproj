@@ -156,10 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				272CB805216F8AF4009A759A /* ChatVC.swift */,
-				272CB807216F8B18009A759A /* ChannelVC.swift */,
-				278FAC3C2174C589003E2C66 /* LoginVC.swift */,
 				278FAC3E2174C9FD003E2C66 /* CreateAccountVC.swift */,
+				278FAC3C2174C589003E2C66 /* LoginVC.swift */,
 				271333C52177718A004E71D8 /* AvatarPickerVC.swift */,
+				272CB807216F8B18009A759A /* ChannelVC.swift */,
 				277ED9522178AF6100FC9A6B /* ProfileVC.swift */,
 			);
 			path = Controller;
