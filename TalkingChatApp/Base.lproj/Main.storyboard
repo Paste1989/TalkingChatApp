@@ -116,6 +116,9 @@
                                     <constraint firstAttribute="width" constant="60" id="YR6-yO-jTn"/>
                                 </constraints>
                                 <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="addChannelBtnPressed:" destination="X52-PR-44q" eventType="touchUpInside" id="kHd-Oj-WhR"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jbI-Js-pA8">
                                 <rect key="frame" x="0.0" y="185" width="375" height="352"/>
