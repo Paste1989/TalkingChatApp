@@ -44,14 +44,14 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarPickerCollectionViewCell", for: indexPath) as? avatarPickerCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AvatarPickerCollectionViewCell", for: indexPath) as? AvatarPickerCollectionViewCell {
             
             cell.configureCell(index: indexPath.item, type: avatarType)
             
             return cell
         }
         
-        return avatarPickerCollectionViewCell()
+        return AvatarPickerCollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

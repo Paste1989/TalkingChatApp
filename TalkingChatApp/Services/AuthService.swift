@@ -97,8 +97,6 @@ class AuthService {
                     self.userEmail = json["user"].stringValue
                     self.authToken = json["token"].stringValue
                 }
-               
-                
                 self.isLoggedIn = true
                 completion(true)
             }
@@ -129,7 +127,6 @@ class AuthService {
                     self.setUserInfo(data: data)
                 
                     completion(true)
-
             }
             else {
                 completion(false)

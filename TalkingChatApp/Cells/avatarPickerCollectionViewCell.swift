@@ -13,7 +13,7 @@ enum  AvatarType {
     case light
 }
 
-class avatarPickerCollectionViewCell: UICollectionViewCell {
+class AvatarPickerCollectionViewCell: UICollectionViewCell {
     
     //MARK: - Outlets
     @IBOutlet weak var avatarImage: UIImageView!
