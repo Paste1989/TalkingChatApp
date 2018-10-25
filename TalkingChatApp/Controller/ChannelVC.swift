@@ -15,7 +15,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //MARK: - Outlets
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var userImage: CircleImage!
-    @IBOutlet weak var cnannelTableView: UITableView!
+    @IBOutlet weak var channelTableView: UITableView!
     
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     
@@ -25,12 +25,20 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cnannelTableView.delegate = self
-        cnannelTableView.dataSource = self
+        channelTableView.delegate = self
+        channelTableView.dataSource = self
         self.revealViewController().rearViewRevealWidth =  self.view.frame.size.width - 60
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChanged(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        
+        SocketService.instance.getChannel { (success) in
+            
+            if success {
+                self.channelTableView.reloadData()
+            }
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

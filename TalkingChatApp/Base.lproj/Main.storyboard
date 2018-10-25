@@ -197,7 +197,7 @@
                         <viewLayoutGuide key="safeArea" id="exD-0A-Rf8"/>
                     </view>
                     <connections>
-                        <outlet property="cnannelTableView" destination="jbI-Js-pA8" id="UQ6-Nv-Xgs"/>
+                        <outlet property="channelTableView" destination="jbI-Js-pA8" id="UQ6-Nv-Xgs"/>
                         <outlet property="loginBtn" destination="fXX-yJ-mmh" id="ZR3-1F-giA"/>
                         <outlet property="userImage" destination="IpQ-ZD-Fro" id="JH0-ah-Sz1"/>
                         <segue destination="GJN-lb-ruU" kind="show" identifier="toLogin" id="htG-8l-gji"/>
