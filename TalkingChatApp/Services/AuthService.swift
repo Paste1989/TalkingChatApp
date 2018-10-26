@@ -124,9 +124,9 @@ class AuthService {
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 
-                    self.setUserInfo(data: data)
+                self.setUserInfo(data: data)
                 
-                    completion(true)
+                completion(true)
             }
             else {
                 completion(false)
