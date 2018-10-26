@@ -25,6 +25,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("CHANELLS: \(MessageService.instance.channels)")
+        
         channelTableView.delegate = self
         channelTableView.dataSource = self
         self.revealViewController().rearViewRevealWidth =  self.view.frame.size.width - 60
@@ -38,6 +40,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+
     
 
     override func didReceiveMemoryWarning() {

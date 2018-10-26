@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        SocketService.init().establishConnection()
+        SocketService.instance.establishConnection()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

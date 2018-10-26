@@ -22,7 +22,7 @@ class AddChannelVC: UIViewController {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupView()
     }
 
@@ -42,6 +42,10 @@ class AddChannelVC: UIViewController {
             
             if success {
                 self.dismiss(animated: true, completion: nil)
+                debugPrint(success.description)
+            }
+            else {
+                print("CHANNEL NOT ADDED")
             }
         }
     }
