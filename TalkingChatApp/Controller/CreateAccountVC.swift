@@ -80,6 +80,9 @@ class CreateAccountVC: UIViewController {
                                 
                                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                             }
+                            else {
+                                print("USER IS NOT CRETAED")
+                            }
                         })
                     }
                 })

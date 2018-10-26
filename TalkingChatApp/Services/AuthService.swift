@@ -119,14 +119,24 @@ class AuthService {
             "avatarName": avatarName
         ]
         
+        
         Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 
-                self.setUserInfo(data: data)
+                do {
+                let json = try! JSON(data: data)
+                let id = json["_id"].stringValue
+                let color = json["avatarColor"].stringValue
+                let avatarName = json["avatarName"].stringValue
+                let email = json["email"].stringValue
+                let name = json["name"].stringValue
+                
+                UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
                 
                 completion(true)
+                }
             }
             else {
                 completion(false)
@@ -142,9 +152,18 @@ class AuthService {
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 
-                self.setUserInfo(data: data)
-                
-                completion(true)
+                do {
+                    let json = try! JSON(data: data)
+                    let id = json["_id"].stringValue
+                    let color = json["avatarColor"].stringValue
+                    let avatarName = json["avatarName"].stringValue
+                    let email = json["email"].stringValue
+                    let name = json["name"].stringValue
+                    
+                    UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+                    
+                    completion(true)
+                }
             }
             else {
                 completion(false)
@@ -160,7 +179,7 @@ class AuthService {
         let avatarName = json["avatarName"].stringValue
         let email = json["email"].stringValue
         let name = json["name"].stringValue
-        
+
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
     }
 }

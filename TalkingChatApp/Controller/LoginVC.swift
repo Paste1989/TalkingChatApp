@@ -50,6 +50,9 @@ class LoginVC: UIViewController {
                         self.dismiss(animated: true, completion: nil)
                         print("USER LOGGED IN")
                     }
+                    else {
+                        print("USER NOT LOGGED IN")
+                    }
                 })
             }
         }
