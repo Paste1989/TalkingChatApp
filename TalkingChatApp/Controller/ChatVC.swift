@@ -12,6 +12,7 @@ class ChatVC: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var channelNameLabel: UILabel!
     
     
     //MARK: - LifeCycle
@@ -24,15 +25,15 @@ class ChatVC: UIViewController {
      
         view.backgroundColor = UIColor.white
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChanged(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
+        
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail { (success) in
                 
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             }
-        }
-        
-        MessageService.instance.findAllChannel { (success) in
-            
         }
     }
 
@@ -43,5 +44,30 @@ class ChatVC: UIViewController {
     
 
     //MARK: - Actions
-
+    @objc func userDataDidChanged(_ notif: Notification) {
+        if AuthService.instance.isLoggedIn {
+            onLoginGetMessages()
+        }
+        else {
+            channelNameLabel.text = "Please Log In"
+        }
+    }
+    
+    @objc func channelSelected(_ notif: Notification) {
+        updateWithChannel()
+    }
+    
+    func onLoginGetMessages() {
+        MessageService.instance.findAllChannel { (success) in
+            if success {
+                //do stuff with channels
+            }
+        }
+    }
+    
+    func updateWithChannel() {
+        let channelName = MessageService.instance.selectedChannel?.channelTitle ?? ""
+        channelNameLabel.text = "#\(channelName)"
+    }
+    
 }

@@ -26,6 +26,8 @@ let myPurple: UIColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, 
 
 // Notification Constansts
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("NotifUserDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelsSelected")
 
 
 // Segues

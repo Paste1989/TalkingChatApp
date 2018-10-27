@@ -172,15 +172,15 @@ class AuthService {
         }
     }
     
-    func setUserInfo(data: Data) {
-        let json = try! JSON(data: data)
-        let id = json["_id"].stringValue
-        let color = json["avatarColor"].stringValue
-        let avatarName = json["avatarName"].stringValue
-        let email = json["email"].stringValue
-        let name = json["name"].stringValue
-
-        UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
-    }
+//    func setUserInfo(data: Data) {
+//        let json = try! JSON(data: data)
+//        let id = json["_id"].stringValue
+//        let color = json["avatarColor"].stringValue
+//        let avatarName = json["avatarName"].stringValue
+//        let email = json["email"].stringValue
+//        let name = json["name"].stringValue
+//
+//        UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+//    }
 }
 

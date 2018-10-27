@@ -54,10 +54,10 @@
                                 <state key="normal" image="menuBtn"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TalkingChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7m-5q-q0a">
-                                <rect key="frame" x="131" y="35" width="113" height="24"/>
+                                <rect key="frame" x="50" y="35" width="275" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="1im-AG-y4c"/>
-                                    <constraint firstAttribute="width" constant="113" id="40v-K4-v5r"/>
+                                    <constraint firstAttribute="width" constant="275" id="40v-K4-v5r"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,6 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="nSu-7V-Xtp"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLabel" destination="y7m-5q-q0a" id="Avo-bT-5Vt"/>
                         <outlet property="menuButton" destination="RkR-Wk-zDM" id="k4o-30-qg9"/>
                     </connections>
                 </viewController>
