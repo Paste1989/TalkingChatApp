@@ -12,6 +12,7 @@
 		271333C62177718A004E71D8 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333C52177718A004E71D8 /* AvatarPickerVC.swift */; };
 		271333C921777421004E71D8 /* AvatarPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333C821777421004E71D8 /* AvatarPickerCollectionViewCell.swift */; };
 		271333CB21779852004E71D8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271333CA21779852004E71D8 /* CircleImage.swift */; };
+		27197C3F2184C449006BB1E6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27197C3E2184C449006BB1E6 /* Message.swift */; };
 		272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CB7FB216F8604009A759A /* SWRevealViewController.m */; };
 		272CB806216F8AF4009A759A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CB805216F8AF4009A759A /* ChatVC.swift */; };
 		272CB808216F8B18009A759A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CB807216F8B18009A759A /* ChannelVC.swift */; };
@@ -64,6 +65,7 @@
 		271333C52177718A004E71D8 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		271333C821777421004E71D8 /* AvatarPickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		271333CA21779852004E71D8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		27197C3E2184C449006BB1E6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		272CB7FA216F8603009A759A /* TalkingChatApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalkingChatApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		272CB7FB216F8604009A759A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		272CB7FC216F8604009A759A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				27CA1D6321790C5C006F76DB /* Channel.swift */,
+				27197C3E2184C449006BB1E6 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				277855E22180AF4600DC3A6F /* SocketService.swift in Sources */,
 				27EEF41A2176336100984428 /* AuthService.swift in Sources */,
 				272CB7FD216F8604009A759A /* SWRevealViewController.m in Sources */,
+				27197C3F2184C449006BB1E6 /* Message.swift in Sources */,
 				277855DF21809B5600DC3A6F /* AddChannelVC.swift in Sources */,
 				272CB808216F8B18009A759A /* ChannelVC.swift in Sources */,
 				271333C62177718A004E71D8 /* AvatarPickerVC.swift in Sources */,
