@@ -13,6 +13,8 @@ class ChatVC: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var channelNameLabel: UILabel!
+    @IBOutlet weak var messageTextField: UITextField!
+    
     
     
     //MARK: - LifeCycle
@@ -35,6 +37,10 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             }
         }
+        
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +62,31 @@ class ChatVC: UIViewController {
     @objc func channelSelected(_ notif: Notification) {
         updateWithChannel()
     }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
+    }
+    
+    @IBAction func sendBtnPressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            
+            guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+            guard let message = messageTextField.text else { return }
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
+                
+                if success {
+                    self.messageTextField.text = ""
+                    self.messageTextField.resignFirstResponder()
+                }
+                else {
+                    print("Message not sent!")
+                }
+            }
+        }
+    }
+    
+    
     
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
@@ -84,5 +115,6 @@ class ChatVC: UIViewController {
         channelNameLabel.text = "#\(channelName)"
         getMessages()
     }
+    
     
 }

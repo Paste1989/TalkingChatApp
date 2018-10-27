@@ -63,22 +63,48 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-Lh-F7i">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="W91-5G-Imp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-xg-bbb">
+                                <rect key="frame" x="323" y="625" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="0Uo-pi-ElO"/>
+                                    <constraint firstAttribute="height" constant="44" id="LuC-fe-JXN"/>
+                                </constraints>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendBtnPressed:" destination="QMc-rD-WbN" eventType="touchUpInside" id="SNA-pw-eF6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.075011842817169633" green="0.67532312843020559" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zRi-Lh-F7i" firstAttribute="bottom" secondItem="nSu-7V-Xtp" secondAttribute="bottom" id="0kg-Uy-iZM"/>
                             <constraint firstItem="y7m-5q-q0a" firstAttribute="centerY" secondItem="RkR-Wk-zDM" secondAttribute="centerY" id="4o5-p7-Pmq"/>
                             <constraint firstItem="9tg-wE-WWc" firstAttribute="top" secondItem="39A-xW-KI6" secondAttribute="top" id="8Zh-dJ-mAn"/>
+                            <constraint firstItem="nSu-7V-Xtp" firstAttribute="trailing" secondItem="ZFb-xg-bbb" secondAttribute="trailing" constant="8" id="Ar1-fz-bPE"/>
                             <constraint firstItem="9tg-wE-WWc" firstAttribute="trailing" secondItem="nSu-7V-Xtp" secondAttribute="trailing" id="Ige-sz-4qN"/>
                             <constraint firstItem="RkR-Wk-zDM" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" constant="12" id="T9g-kq-Ukn"/>
                             <constraint firstItem="y7m-5q-q0a" firstAttribute="centerX" secondItem="9tg-wE-WWc" secondAttribute="centerX" id="VeL-EN-j54"/>
                             <constraint firstItem="RkR-Wk-zDM" firstAttribute="top" secondItem="9tg-wE-WWc" secondAttribute="bottom" constant="-45" id="Xzq-5G-oMu"/>
                             <constraint firstItem="9tg-wE-WWc" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" id="ZEp-1l-q6r"/>
+                            <constraint firstItem="ZFb-xg-bbb" firstAttribute="centerY" secondItem="zRi-Lh-F7i" secondAttribute="centerY" id="iRN-Cc-xO6"/>
+                            <constraint firstItem="zRi-Lh-F7i" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" id="mfS-Dj-zQE"/>
+                            <constraint firstItem="nSu-7V-Xtp" firstAttribute="trailing" secondItem="zRi-Lh-F7i" secondAttribute="trailing" id="uNN-4I-zxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nSu-7V-Xtp"/>
                     </view>
                     <connections>
                         <outlet property="channelNameLabel" destination="y7m-5q-q0a" id="Avo-bT-5Vt"/>
                         <outlet property="menuButton" destination="RkR-Wk-zDM" id="k4o-30-qg9"/>
+                        <outlet property="messageTextField" destination="zRi-Lh-F7i" id="v7T-PD-mYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTc-Tc-tLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -648,6 +674,7 @@
         <image name="menuBtn" width="21" height="16"/>
         <image name="profIcon" width="32" height="32"/>
         <image name="quest" width="24" height="24"/>
+        <image name="send" width="30" height="30"/>
         <image name="xmark" width="20" height="20"/>
     </resources>
 </document>
