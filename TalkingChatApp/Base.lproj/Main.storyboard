@@ -145,6 +145,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgb-wD-mGj">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -158,11 +164,13 @@
                             <constraint firstItem="y7m-5q-q0a" firstAttribute="centerX" secondItem="9tg-wE-WWc" secondAttribute="centerX" id="VeL-EN-j54"/>
                             <constraint firstItem="RkR-Wk-zDM" firstAttribute="top" secondItem="9tg-wE-WWc" secondAttribute="bottom" constant="-45" id="Xzq-5G-oMu"/>
                             <constraint firstItem="9tg-wE-WWc" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" id="ZEp-1l-q6r"/>
+                            <constraint firstItem="zRi-Lh-F7i" firstAttribute="top" secondItem="Lgb-wD-mGj" secondAttribute="bottom" constant="6" id="b9O-Uv-AVV"/>
                             <constraint firstItem="ZFb-xg-bbb" firstAttribute="centerY" secondItem="zRi-Lh-F7i" secondAttribute="centerY" id="iRN-Cc-xO6"/>
                             <constraint firstItem="nSu-7V-Xtp" firstAttribute="trailing" secondItem="Ijr-FU-2Cq" secondAttribute="trailing" id="iik-kI-vPq"/>
                             <constraint firstItem="zRi-Lh-F7i" firstAttribute="top" secondItem="Ijr-FU-2Cq" secondAttribute="bottom" constant="30" id="ivD-V6-B5z"/>
                             <constraint firstItem="Ijr-FU-2Cq" firstAttribute="top" secondItem="9tg-wE-WWc" secondAttribute="bottom" id="ksE-n3-Hgg"/>
                             <constraint firstItem="zRi-Lh-F7i" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" id="mfS-Dj-zQE"/>
+                            <constraint firstItem="Lgb-wD-mGj" firstAttribute="leading" secondItem="nSu-7V-Xtp" secondAttribute="leading" constant="8" id="nNt-xf-gkF"/>
                             <constraint firstItem="nSu-7V-Xtp" firstAttribute="trailing" secondItem="zRi-Lh-F7i" secondAttribute="trailing" id="uNN-4I-zxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nSu-7V-Xtp"/>
@@ -173,6 +181,7 @@
                         <outlet property="menuButton" destination="RkR-Wk-zDM" id="k4o-30-qg9"/>
                         <outlet property="messageTextField" destination="zRi-Lh-F7i" id="v7T-PD-mYc"/>
                         <outlet property="sendButton" destination="ZFb-xg-bbb" id="9eO-Xk-dsm"/>
+                        <outlet property="userTypingLabel" destination="Lgb-wD-mGj" id="yUX-ca-l3y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTc-Tc-tLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
