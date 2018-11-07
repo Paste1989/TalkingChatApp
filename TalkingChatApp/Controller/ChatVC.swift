@@ -11,7 +11,7 @@ import UIKit
 class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    var isTyping: Bool = false
+    var isTyping: Bool!
     
     //MARK: - Outlets
     @IBOutlet weak var menuButton: UIButton!
@@ -125,19 +125,15 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBAction func messageTextFieldEditing(_ sender: Any) {
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
         
-        if messageTextField.text == "" {
+        if messageTextField.text?.count == 0 {
             isTyping = false
             sendButton.isHidden = true
-            
             SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
         }
-        else {
-            if isTyping == false {
-                sendButton.isHidden = false
-                
-                SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
-            }
+        else if (messageTextField.text?.count)! > 0 || messageTextField.becomeFirstResponder() {
             isTyping = true
+            sendButton.isHidden = false
+            SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
         }
     }
     
@@ -160,6 +156,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         view.endEditing(true)
     }
     
+
     @IBAction func sendBtnPressed(_ sender: Any) {
         print("SEND BTN PRESSED")
         
@@ -175,6 +172,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     self.messageTextField.text = ""
                     self.messageTextField.resignFirstResponder()
                     SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
+                    self.sendButton.isHidden = true
                 }
                 else {
                     print("Message not sent!")
