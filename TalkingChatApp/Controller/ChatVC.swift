@@ -57,16 +57,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
         
-//        SocketService.instance.getChatMessage { (success) in
-//            if success {
-//                self.chatTableView.reloadData()
-//
-//                if MessageService.instance.messages.count > 0 {
-//                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-//                    self.chatTableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
-//                }
-//            }
-//        }
         
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
